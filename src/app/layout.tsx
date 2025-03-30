@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/components/sidebar";
 import TopNav from "@/components/top-nav";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +18,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <div className={`flex h-screen dark`}>
-          <Sidebar />
+          {/* <Sidebar /> */}
           <div className="w-full flex flex-1 flex-col">
             <header className="h-16 border-b border-gray-200 dark:border-[#1F1F23]">
               <TopNav />
